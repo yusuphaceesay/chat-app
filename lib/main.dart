@@ -1,0 +1,34 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+import 'package:messanger_clone/screens/home.dart';
+import 'package:messanger_clone/screens/sign_in.dart';
+import 'package:messanger_clone/services/auth.dart';
+
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        primaryColor: Colors.red,
+      ),
+      home: FutureBuilder(
+        future: AuthMethod().getCurrentUser(),
+        builder: (context, AsyncSnapshot<dynamic> snapshot){
+          return snapshot.hasData ? Home() : SignIn();
+        },
+      ),
+    );
+  }
+}
+
+

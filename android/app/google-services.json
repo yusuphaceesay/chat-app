@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "928520624530",
+    "project_id": "flutter-chat-f284d",
+    "storage_bucket": "flutter-chat-f284d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928520624530:android:e9f653ebdeb021bc5f094b",
+        "android_client_info": {
+          "package_name": "com.taybull.messanger_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "928520624530-et9br46kj9rt1d18t5ckbsecj8bca5jb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGLbpRIdCQdIrGs5afghFTnQSgbqWsqFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "928520624530-et9br46kj9rt1d18t5ckbsecj8bca5jb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
